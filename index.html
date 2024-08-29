@@ -74,8 +74,33 @@
                             <input class="text-xl w-24 p-2" type="text" id="parallelogram-height" placeholder="h">
                             <span>cm</span>
                         </div>
+                        <div>
+                            <p>Area: <span id="parallelogram-area">cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions">
                             <button onclick="parallelogramCalculate()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pentagone Card -->
+                <div class="card bg-base-100 w-96 shadow-xl mt-5">
+                    <figure>
+                        <img src="./images/pentagon.png" alt="Pentagone" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagone</h2>
+                        <p>Area(A) = 0.5 X p X b</p>
+                        <div>
+                            <input class="text-xl w-24 p-2" type="text" id="pentagone" placeholder="b">
+                            <span>cm</span>
+                            <input class="text-xl w-24 p-2" type="text" id="pentagone-base" placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="pentagone-area">cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="pentagoneCalculate()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -93,6 +118,7 @@
     <script src="scripts/traingle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculate.js"></script>
+    <script src="scripts/pentagone-calculate.js"></script>
 </body>
 
 </html>
